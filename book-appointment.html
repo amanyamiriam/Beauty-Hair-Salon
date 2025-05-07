@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Beauty Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Update the navigation links in header -->
+        <!-- Update the navigation links in header -->
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Beauty Hair Salon Logo">
+                <div class="logo-text">
+                    <span class="brand-name">Beauty Hair Salon</span>
+                    <span class="tagline">Your Beauty Journey Begins Here</span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="booking-page">
+        <div class="booking-hero">
+            <h1>Book Your Appointment</h1>
+            <p>Transform your look with our expert stylists</p>
+        </div>
+
+        <div class="booking-container">
+            <div class="booking-steps">
+                <div class="step active">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Select Service</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Choose Time</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Your Details</span>
+                </div>
+            </div>
+
+            <form class="booking-form">
+                <div class="service-selection">
+                    <h3>Select Your Service</h3>
+                    <div class="service-options">
+                        <div class="service-option">
+                            <input type="radio" name="service" id="haircut" value="haircut">
+                            <label for="haircut">
+                                <i class="fas fa-cut"></i>
+                                <span>Haircut & Styling</span>
+                                <span class="price">$50</span>
+                            </label>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" name="service" id="coloring" value="coloring">
+                            <label for="coloring">
+                                <i class="fas fa-palette"></i>
+                                <span>Hair Coloring</span>
+                                <span class="price">$120</span>
+                            </label>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" name="service" id="treatment" value="treatment">
+                            <label for="treatment">
+                                <i class="fas fa-pump-soap"></i>
+                                <span>Hair Treatment</span>
+                                <span class="price">$80</span>
+                            </label>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" name="service" id="makeup" value="makeup">
+                            <label for="makeup">
+                                <i class="fas fa-magic"></i>
+                                <span>Makeup Service</span>
+                                <span class="price">$75</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="datetime-selection">
+                        <h3>Choose Your Preferred Date & Time</h3>
+                        <div class="date-picker">
+                            <input type="date" required>
+                        </div>
+                        <div class="time-slots">
+                            <button type="button" class="time-slot">9:00 AM</button>
+                            <button type="button" class="time-slot">10:00 AM</button>
+                            <button type="button" class="time-slot">11:00 AM</button>
+                            <button type="button" class="time-slot">2:00 PM</button>
+                            <button type="button" class="time-slot">3:00 PM</button>
+                            <button type="button" class="time-slot">4:00 PM</button>
+                        </div>
+                    </div>
+
+                    <div class="personal-details">
+                        <h3>Your Details</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Optional)"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-booking">Confirm Booking</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

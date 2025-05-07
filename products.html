@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Beauty Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <!-- Update the navigation links in header -->
+        <!-- Update the navigation links in header -->
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Beauty Hair Salon Logo">
+                <div class="logo-text">
+                    <span class="brand-name">Beauty Hair Salon</span>
+                    <span class="tagline">Your Beauty Journey Begins Here</span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <div class="products-hero">
+            <h1>Our Beauty Products</h1>
+            <p>Professional hair care for your daily routine</p>
+        </div>
+
+        <div class="product-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Shampoo</button>
+            <button class="filter-btn">Conditioner</button>
+            <button class="filter-btn">Treatments</button>
+            <button class="filter-btn">Styling</button>
+        </div>
+
+        <!-- After the product filters section -->
+        <section class="all-products">
+            <div class="section-header">
+                <h2>All Products</h2>
+                <p>Professional hair care products for every need</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Hair Care Category -->
+                <div class="product-category">
+                    <h3>Hair Care</h3>
+                    <div class="product-list">
+                        <div class="product-card">
+                            <span class="badge">Best Seller</span>
+                            <img src="images/shampoo-premium.jpg" alt="Premium Shampoo">
+                            <div class="product-info">
+                                <h4>Premium Shampoo</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$29.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    
+                        <div class="product-card">
+                            <span class="badge">New</span>
+                            <img src="images/conditioner-repair.jpg" alt="Repair Conditioner">
+                            <div class="product-info">
+                                <h4>Repair Conditioner</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="price">$27.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Styling Products Category -->
+                <div class="product-category">
+                    <h3>Styling Products</h3>
+                    <div class="product-list">
+                        <div class="product-card">
+                            <img src="images/mousse.jpg" alt="Volumizing Mousse">
+                            <div class="product-info">
+                                <h4>Volumizing Mousse</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$24.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    
+                        <div class="product-card">
+                            <span class="badge">Limited</span>
+                            <img src="images/hair-spray.jpg" alt="Professional Hair Spray">
+                            <div class="product-info">
+                                <h4>Professional Hair Spray</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$32.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Treatment Products Category -->
+                <div class="product-category">
+                    <h3>Treatments</h3>
+                    <div class="product-list">
+                        <div class="product-card">
+                            <span class="badge">Sale</span>
+                            <img src="images/hair-mask.jpg" alt="Intensive Hair Mask">
+                            <div class="product-info">
+                                <h4>Intensive Hair Mask</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="price"><span class="original-price">$49.99</span> $39.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    
+                        <div class="product-card">
+                            <img src="images/scalp-treatment.jpg" alt="Scalp Treatment">
+                            <div class="product-info">
+                                <h4>Scalp Treatment</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$45.99</p>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Color Care Category -->
+            <div class="product-category">
+                <h3>Color Care</h3>
+                <div class="product-list">
+                    <div class="product-card">
+                        <span class="badge special">Premium</span>
+                        <img src="images/color-protect.jpg" alt="Color Protection Shampoo">
+                        <div class="product-info">
+                            <h4>Color Protection Shampoo</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="price">$34.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/color-mask.jpg" alt="Color Lock Mask">
+                        <div class="product-info">
+                            <h4>Color Lock Mask</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$42.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Tools Category -->
+            <div class="product-category">
+                <h3>Professional Tools</h3>
+                <div class="product-list">
+                    <div class="product-card">
+                        <span class="badge luxury">Luxury</span>
+                        <img src="images/pro-dryer.jpg" alt="Professional Hair Dryer">
+                        <div class="product-info">
+                            <h4>Professional Hair Dryer</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="price">$199.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="badge luxury">Premium</span>
+                        <img src="images/ceramic-iron.jpg" alt="Ceramic Flat Iron">
+                        <div class="product-info">
+                            <h4>Ceramic Flat Iron</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="price">$159.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Natural Line Category -->
+            <div class="product-category">
+                <h3>Natural Line</h3>
+                <div class="product-list">
+                    <div class="product-card">
+                        <span class="badge eco">Organic</span>
+                        <img src="images/natural-shampoo.jpg" alt="Organic Shampoo">
+                        <div class="product-info">
+                            <h4>Organic Shampoo</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="price">$38.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="badge eco">Vegan</span>
+                        <img src="images/herbal-oil.jpg" alt="Herbal Hair Oil">
+                        <div class="product-info">
+                            <h4>Herbal Hair Oil</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$45.99</p>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- After the products-hero section -->
+        <div class="category-links">
+            <div class="category-card">
+                <a href="shampoo.html">
+                    <img src="images/shampoo-category.jpg" alt="Shampoo Collection">
+                    <div class="category-info">
+                        <h3>Shampoo Collection</h3>
+                        <p>Premium hair cleansing solutions</p>
+                        <span class="explore-btn">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-card">
+                <a href="conditioner.html">
+                    <img src="images/conditioner-category.jpg" alt="Conditioner Collection">
+                    <div class="category-info">
+                        <h3>Conditioner Collection</h3>
+                        <p>Deep nourishing treatments</p>
+                        <span class="explore-btn">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-card">
+                <a href="treatment.html">
+                    <img src="images/treatment-category.jpg" alt="Hair Treatments">
+                    <div class="category-info">
+                        <h3>Hair Treatments</h3>
+                        <p>Professional care solutions</p>
+                        <span class="explore-btn">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="category-card">
+                <a href="styling.html">
+                    <img src="images/styling-category.jpg" alt="Styling Products">
+                    <div class="category-info">
+                        <h3>Styling Products</h3>
+                        <p>Create your perfect look</p>
+                        <span class="explore-btn">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+</body>
+</html>

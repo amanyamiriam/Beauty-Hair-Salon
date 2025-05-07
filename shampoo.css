@@ -1,0 +1,212 @@
+/* Shampoo Page Specific Styles */
+.shampoo-hero {
+    background: linear-gradient(135deg, #ff69b4, #9932cc);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.shampoo-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInUp 0.8s ease;
+}
+
+.shampoo-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+}
+
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Product Card Enhancements */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Product Information Styling */
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.description {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Price Tag Styling */
+.price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff69b4;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Badge Styling */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff69b4, #9932cc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+}
+
+.add-to-cart i {
+    font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shampoo-hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shampoo-hero {
+        padding: 100px 20px;
+    }
+
+    .shampoo-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .product-card img {
+        height: 250px;
+    }
+
+    .product-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shampoo-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .shampoo-hero p {
+        font-size: 1rem;
+    }
+
+    .badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) {
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover img {
+        transform: none;
+    }
+
+    .add-to-cart:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,103 @@
+/* Hero Sections */
+.category-hero {
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.shampoo-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/shampoo-banner.jpg');
+}
+
+.conditioner-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/conditioner-banner.jpg');
+}
+
+.treatment-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/treatment-banner.jpg');
+}
+
+.styling-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/styling-banner.jpg');
+}
+
+/* Category Navigation */
+.category-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.category-navigation a {
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category-navigation a.active {
+    background: linear-gradient(135deg, #ff69b4, #9932cc);
+    color: white;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Product Cards */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.description {
+    color: #666;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-navigation {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .category-navigation a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+        padding: 30px 15px;
+    }
+}

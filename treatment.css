@@ -1,0 +1,90 @@
+/* Treatment Page Specific Styles */
+.treatment-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/treatment-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.treatment-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    animation: slideInLeft 0.8s ease;
+}
+
+.treatment-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideInRight 1s ease;
+}
+
+/* Treatment-specific Badge Styles */
+.badge.professional {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #333;
+}
+
+.badge.intensive {
+    background: linear-gradient(135deg, #800080, #4B0082);
+    color: white;
+}
+
+/* Treatment Card Enhancements */
+.product-card.treatment {
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.product-card.treatment:hover {
+    border-color: #ff69b4;
+    box-shadow: 0 10px 30px rgba(255,105,180,0.15);
+}
+
+/* Treatment-specific Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .treatment-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .product-card.treatment {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .treatment-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .treatment-hero p {
+        font-size: 1rem;
+    }
+}
