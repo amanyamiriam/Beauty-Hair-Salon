@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Beauty Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <!-- Include other CSS files -->
+</head>
+<body>
+    <header>
+        <!-- Include your existing header -->
+    </header>
+
+    <main class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax (10%):</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button id="checkout-button" class="checkout-button">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
